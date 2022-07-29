@@ -40,5 +40,8 @@
   },
   "devDependencies": {
     "react-view-pdf": "^1.0.0"
+  },
+  "engines": {
+    "node" : "v16.14.2"
   }
 }
