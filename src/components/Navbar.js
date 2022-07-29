@@ -17,7 +17,8 @@ export default function Navbar(props) {
         <div class="container topBotomBordersOut" style={{padding: '2%'}}>
             <a onClick={() => newPage(1)}>About Me</a>
             <a onClick={() => newPage(2)}>Projects</a>
-            <a onClick={e => newUrl('https://drive.google.com/file/d/1cMdRxR7YXX7iMsmKTC9vtuhAqXv6QEfx/view?usp=sharing')}>Resume</a>
+            <a href='https://drive.google.com/file/d/17b_UK7UNvqZ67vBq-zDlemQdbddahuW7/view?usp=sharing'
+            onClick={e => newUrl('https://drive.google.com/file/d/17b_UK7UNvqZ67vBq-zDlemQdbddahuW7/view?usp=sharing')}>Resume</a>
         </div>
     )
 }
