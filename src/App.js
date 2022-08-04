@@ -4,11 +4,17 @@ import './stylesheets/Animations.css'
 import Navbar from './components/Navbar';
 import Bio from './components/Bio';
 import Projects from './components/Projects';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 function App() {
   const [page, setPage] = useState(1);
+
+  // useEffect(() => {
+  //   console.log('hello')
+  //   console.log(document);
+  //   document.title = 'Oliver';
+  // }, []);
 
   return (<div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
     <img style={{height: '35vh',
@@ -23,7 +29,7 @@ function App() {
       display: 'flex',
       width: '100%'
     }}>
-      <img src={require('./face.PNG')} 
+      <img src={require('./profile_picture.jpeg')} 
            alt={'Oliver Cai'}
            style={{
             width: '35vh',
